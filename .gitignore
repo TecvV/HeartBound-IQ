@@ -8,4 +8,6 @@ frontend/.env.*
 *.log
 backend/*.log
 frontend/*.log
+frontend/build
+build
 .DS_Store
