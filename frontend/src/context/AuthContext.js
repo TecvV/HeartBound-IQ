@@ -3,7 +3,8 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-axios.defaults.baseURL = process.env.REACT_APP_API_BASE || '' ;
+const apiBase = (process.env.REACT_APP_API_BASE || 'https://heartbound-api.vercel.app').trim();
+axios.defaults.baseURL = apiBase;
 
 export function AuthProvider({ children }) {
   const [user,    setUser]    = useState(null);
