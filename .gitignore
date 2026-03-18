@@ -11,3 +11,4 @@ frontend/*.log
 frontend/build
 build
 .DS_Store
+.vercel
